@@ -5,4 +5,4 @@
 [HTML基础知识](https://github.com/xiaoda/fe-basic/blob/master/html/README.md)  
 [CSS基础知识](https://github.com/xiaoda/fe-basic/blob/master/css/README.md)  
 [JS基础知识](https://github.com/xiaoda/fe-basic/blob/master/js/README.md)  
-[REACT的重要基础概念](https://github.com/xiaoda/fe-basic/blob/master/js/README.md)  
+[REACT的重要基础概念](https://github.com/xiaoda/fe-basic/blob/master/react/README.md)  

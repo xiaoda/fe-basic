@@ -150,6 +150,7 @@ $.ajax({
     url: '/',
     type: 'get', // post, jsonp
     data: {},
+    dataType: 'json',
     headers: {}, // 请求头信息
     context: this, // 传入this
     cache: false // 缓存

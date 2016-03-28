@@ -69,7 +69,7 @@ clearTimeout(handle);
 - 匿名函数
 
 ```
-(function($) {
+(function($, undefined) {
     ...
 })(window.jQuery);
 
@@ -104,11 +104,11 @@ for(var i = 1; i <= 5; i++) {
     new RegExp(pattern, attributes) // RegExp对象
     /^[a-z]*$/i // 正则字面量
 
-    // test用来判断
+    /* test用来判断 */
     /^[a-z]*$/i.test('abc') // true
     /^[a-z]*$/i.test('123') // false
 
-    // match用来获取
+    /* match用来获取 */
     /^[a-z]*$/i.match('abc') // ['abc']
     /^[a-z]*$/i.match('123') // null
 
@@ -162,10 +162,9 @@ $.ajax({
     // 无论成功失败
 });
 
-get请求参数通过url发送，注意最大长度，超过则截断
-
-跨域请求使用jsonp
-jsonp的原理：动态插入script标签加载js文件，传入callback函数名，返回直接调用
+* get请求参数通过url发送，注意最大长度，超过则截断
+* 跨域请求使用jsonp
+  jsonp的原理：动态插入script标签加载js文件，传入callback函数名，返回直接调用
 ```
 
 - 前端MVC结构
@@ -189,6 +188,7 @@ var ModuleA = (function() {
     funcs.a = function() {
         return 1;
     }
+    return funcs;
 })();
 ModuleA.a(); // 1
 

@@ -109,8 +109,7 @@ div{
 float: left; // right
 
 脱离文档流，父元素或者相邻节点需要清除浮动，否则父元素没有高度
-清除浮动：
-overflow: auto; // hidden
+清除浮动：overflow: auto; // hidden
 
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{*+height:1%;}
@@ -119,8 +118,9 @@ overflow: auto; // hidden
 - CSS实现的一个三角形
 
 ```
-// 原理：元素长、宽为0，把上、左、右三条边隐藏掉（颜色设为 transparent）
-// 好处：减少图片使用
+* 原理：元素长、宽为0，把上、左、右三条边隐藏掉（颜色设为 transparent）
+* 好处：减少图片使用
+
 .triangle{
     width: 0;
     height: 0;

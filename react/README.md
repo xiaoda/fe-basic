@@ -2,7 +2,7 @@
 
 - 组件的生命周期
 
-![React lifecycle](https://raw.githubusercontent.com/xiaoda/fe-basic/master/react/res/lifecycle.png =600x490)
+![React lifecycle](https://raw.githubusercontent.com/xiaoda/fe-basic/master/react/res/lifecycle.jpg)
 
 ```
 例子：<Navbar active="index"/>

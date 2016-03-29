@@ -86,6 +86,14 @@
     3.props已有的重复数据
 ```
 
+- 属性和行内样式
+
+```
+render: function() {
+    return (<div className="class-a" style={marginTop: '10px'}></div>);
+}
+```
+
 - 数据循环输出到组件
 
 ```
@@ -102,6 +110,54 @@ render: function() {
         <div className="commentList">
             {this.state.data.map(commentNode)}
         </div>
+    );
+}
+```
+
+- JSX中的if else
+
+```
+/* return中的if */
+render: function() {
+    return (<div id={if (condition) { 'msg' }}>Hello World!</div>);
+}
+
+/* return之前使用if else */
+render: function() {
+    var loginButton;
+        if (loggedIn) {
+            loginButton = <LogoutButton />;
+        } else {
+            loginButton = <LoginButton />;
+    }
+
+    return (
+        <nav>
+            <Home />
+            {loginButton}
+        </nav>
+    );
+}
+
+/* return中定义立即执行函数使用if else和switch */
+render: function() {
+    return (
+        <section>
+            <h1>Color</h1>
+            <h3>Name</h3>
+            <p>{this.state.color || "white"}</p>
+            <h3>Hex</h3>
+            <p>
+                {(() => {
+                    switch (this.state.color) {
+                        case "red":   return "#FF0000";
+                        case "green": return "#00FF00";
+                        case "blue":  return "#0000FF";
+                        default:      return "#FFFFFF";
+                    }
+                })()}
+            </p>
+        </section>
     );
 }
 ```

@@ -2,6 +2,8 @@
 
 - 组件的生命周期
 
+![React lifecycle](./res/lifecycle.png =600x490)
+
 ```
 例子：<Navbar active="index"/>
 

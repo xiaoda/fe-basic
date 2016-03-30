@@ -180,3 +180,7 @@ render: function() {
 没有父子关系的组件间通信：
     设置自己的全局事件系统。在componentDidMount订阅事件，在componentWillUnmount退订
 ````
+
+## Redux
+
+[Redux中文文档](https://camsong.github.io/redux-in-chinese/index.html)
